@@ -1,59 +1,170 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="SmartHouse_Command_.LightRoom_1">
-    <Position X="2" Y="4" Width="1.5" />
+    <Position X="7" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>LightRoom_1.cs</FileName>
+      <HashCode>AAAAAAAAAAAABAQBAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\Light\LightRoom_1.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="SmartHouse_Command_.LightRoom_2">
-    <Position X="4.25" Y="4" Width="1.5" />
+    <Position X="8.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>LightRoom_2.cs</FileName>
+      <HashCode>AAAAAAAAAAAABAQBAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\Light\LightRoom_2.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="SmartHouse_Command_.LightHallway">
-    <Position X="6.5" Y="4" Width="1.5" />
+    <Position X="10.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQBAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\Light\LightHallway.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SmartHouse_Command_.LightKitchen">
+    <Position X="12.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQBAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\Light\LightKitchen.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SmartHouse_Command_.TechnicsKettle">
+    <Position X="18.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\Technics\TechnicsKettle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SmartHouse_Command_.ConditionerRoom_1">
+    <Position X="14.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\Technics\Conditioner\ConditionerRoom_1.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SmartHouse_Command_.ConditionerRoom_2">
+    <Position X="16.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\Technics\Conditioner\ConditionerRoom_2.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SmartHouse_Command_.TVRoom_1">
+    <Position X="21.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\Technics\TV\TVRoom_1.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SmartHouse_Command_.TVRoom_2">
+    <Position X="23.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\Technics\TV\TVRoom_2.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SmartHouse_Command_.TechnicsResiver">
+    <Position X="21.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>LightHallway.cs</FileName>
+      <FileName>Receiver\TechnicsResiver.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="SmartHouse_Command_.IComand">
-    <Position X="7.5" Y="1" Width="1.5" />
+  <Class Name="SmartHouse_Command_.LightResiver">
+    <Position X="7" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Receiver\LightResiver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartHouse_Command_.RemoteControl">
+    <Position X="14" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Invoker\RemoteControl.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="IComand" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="SmartHouse_Command_.IComand">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Command\IComand.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SmartHouse_Command_.ILightCommand">
-    <Position X="4.25" Y="2.5" Width="1.5" />
+    <Position X="9.5" Y="3.25" Width="1.5" />
     <InheritanceLine Type="SmartHouse_Command_.IComand" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="7.5" Y="1.562" />
-        <Point X="4.938" Y="1.562" />
-        <Point X="4.938" Y="2.5" />
+        <Point X="14" Y="2.5" />
+        <Point X="10.312" Y="2.5" />
+        <Point X="10.312" Y="3.25" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Command\Light\ILightCommand.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="LightResiver" />
+    </ShowAsAssociation>
   </Interface>
   <Interface Name="SmartHouse_Command_.ITechnicsCommand">
-    <Position X="11" Y="2.5" Width="1.5" />
+    <Position X="19.25" Y="3.25" Width="1.5" />
     <InheritanceLine Type="SmartHouse_Command_.IComand" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="9" Y="1.562" />
-        <Point X="11.75" Y="1.562" />
-        <Point X="11.75" Y="2.5" />
+        <Point X="15.5" Y="2.59" />
+        <Point X="20" Y="2.59" />
+        <Point X="20" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\Technics\ITechnicsCommand.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TechnicsResiver" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="SmartHouse_Command_.ITechnicsConditioner">
+    <Position X="15.25" Y="5.5" Width="1.5" />
+    <InheritanceLine Type="SmartHouse_Command_.ITechnicsCommand" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="19.688" Y="4.247" />
+        <Point X="19.688" Y="5.125" />
+        <Point X="16" Y="5.125" />
+        <Point X="16" Y="5.5" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Command\Technics\ITechnicsCommand.cs</FileName>
+      <FileName>ITechnicsConditioner.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartHouse_Command_.ITV">
+    <Position X="22.25" Y="5.5" Width="1.5" />
+    <InheritanceLine Type="SmartHouse_Command_.ITechnicsCommand" FixedFromPoint="true">
+      <Path>
+        <Point X="20.438" Y="4.247" />
+        <Point X="20.438" Y="5.125" />
+        <Point X="23" Y="5.125" />
+        <Point X="23" Y="5.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ITV.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

@@ -46,11 +46,24 @@
     <Compile Include="Command\IComand.cs" />
     <Compile Include="Command\Light\ILightCommand.cs" />
     <Compile Include="Command\Technics\ITechnicsCommand.cs" />
-    <Compile Include="LightHallway.cs" />
-    <Compile Include="LightRoom_1.cs" />
-    <Compile Include="LightRoom_2.cs" />
+    <Compile Include="Command\Light\LightHallway.cs" />
+    <Compile Include="Command\Light\LightKitchen.cs" />
+    <Compile Include="Command\Light\LightRoom_1.cs" />
+    <Compile Include="Command\Light\LightRoom_2.cs" />
+    <Compile Include="Command\Technics\Conditioner\ConditionerRoom_1.cs" />
+    <Compile Include="Command\Technics\Conditioner\ConditionerRoom_2.cs" />
+    <Compile Include="ITechnicsConditioner.cs" />
+    <Compile Include="ITV.cs" />
+    <Compile Include="Receiver\LightResiver.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Command\Technics\Conditioner\TechnicsConditioner.cs" />
+    <Compile Include="Command\Technics\TechnicsKettle.cs" />
+    <Compile Include="Command\Technics\TV\TV.cs" />
+    <Compile Include="Command\Technics\TV\TVRoom_1.cs" />
+    <Compile Include="Command\Technics\TV\TVRoom_2.cs" />
+    <Compile Include="Receiver\TechnicsResiver.cs" />
+    <Compile Include="Invoker\RemoteControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

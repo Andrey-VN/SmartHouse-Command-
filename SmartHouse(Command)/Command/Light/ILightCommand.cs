@@ -7,5 +7,6 @@ namespace SmartHouse_Command_
 {
     public interface ILightCommand : IComand
     {
+        LightResiver LightResiver { get; set; }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SmartHouse_Command_
 {
-    public class LightRoom_1
+    public interface ITechnicsConditioner : ITechnicsCommand
     {
     }
 }

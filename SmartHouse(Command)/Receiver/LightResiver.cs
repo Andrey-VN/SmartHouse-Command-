@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SmartHouse_Command_
 {
-    public class LightHallway
+    public class LightResiver
     {
     }
 }

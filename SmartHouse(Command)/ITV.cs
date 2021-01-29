@@ -5,8 +5,7 @@ using System.Text;
 
 namespace SmartHouse_Command_
 {
-    public interface ITechnicsCommand : IComand
+    public interface ITV : ITechnicsCommand
     {
-        TechnicsResiver TechnicsResiver { get; set; }
     }
 }

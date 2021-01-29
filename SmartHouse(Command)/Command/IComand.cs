@@ -7,5 +7,7 @@ namespace SmartHouse_Command_
 {
     public interface IComand
     {
+        void Execute();
+        void Undo();
     }
 }
