@@ -19,7 +19,7 @@ namespace SmartHouse_Command_
         public static LightDimming Level { get; set; }
         public LightReceiverLov()
         {
-            Level = LightDimming.Off;
+            
         }
 
 

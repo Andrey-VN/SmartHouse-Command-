@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SmartHouse_Command_
 {
-    public interface ITechnicsConditioner : ITechnicsCommand
+    public interface IConditionerCommand : ITechnicsCommand
     {
     }
 }

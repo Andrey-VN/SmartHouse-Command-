@@ -1,4 +1,5 @@
 ﻿using SmartHouse_Command_.Receiver;
+using SmartHouse_Command_.Receiver.ConditionerReceiver;
 using SmartHouse_Command_.Receiver.LightReceiver;
 using SmartHouse_Command_.Receiver.TVReceiver;
 using System;
@@ -18,8 +19,8 @@ namespace SmartHouse_Command_
             ITVReceiver tVOffOn = new TVReceiverOffOn();
             ITVReceiver tVLov = new TVReceiverLov();
             remoteControl.SetCommand(0, new TVRoom_1(tVOffOn));
-
             remoteControl.UpButton(0);
+
             remoteControl.SetCommand(1, new TVRoom_1(tVLov));
 
             remoteControl.UpButton(1);
@@ -33,10 +34,9 @@ namespace SmartHouse_Command_
             remoteControl.UpButton(1);
             remoteControl.UpButton(1);
 
-
             remoteControl.DownButton(0);
 
-
+            Console.WriteLine();
 
             ILightReceiver lightResiverLOV = new LightReceiverLov();
             ILightReceiver lightResiverOffOn = new LightReceiverOffOn();
@@ -47,25 +47,69 @@ namespace SmartHouse_Command_
             remoteControl.UpButton(2);
             remoteControl.UpButton(2);
             remoteControl.UpButton(2);
+
             remoteControl.DownButton(2);
             remoteControl.DownButton(2);
             remoteControl.DownButton(2);
             remoteControl.DownButton(2);
+
             remoteControl.UpButton(3);
+
             remoteControl.DownButton(3);
 
+            Console.WriteLine();
 
+            IConditionerResiver condTemp = new ConditionerReceiverTemp();
+            IConditionerResiver condFanMode = new ConditionerReceiverFanMode();
+            IConditionerResiver condOffOn = new ConditionerReceiverOffOn();
+            remoteControl.SetCommand(4, new ConditionerRoom_1(condTemp));
+            remoteControl.SetCommand(5, new ConditionerRoom_1(condFanMode));
+            remoteControl.SetCommand(6, new ConditionerRoom_1(condOffOn));
 
-            //Console.WriteLine();
+            remoteControl.UpButton(5);
+            remoteControl.UpButton(5);
+            remoteControl.UpButton(5);
+            remoteControl.UpButton(5);
 
-            //remoteControl.DownButton();
-            //remoteControl.DownButton();
-            //remoteControl.DownButton();
-            //remoteControl.DownButton();
+            remoteControl.DownButton(5);
+            remoteControl.DownButton(5);
+            remoteControl.DownButton(5);
 
+            Console.WriteLine();
 
+            remoteControl.UpButton(6);
+            remoteControl.DownButton(6);
 
+            Console.WriteLine();
 
+            remoteControl.UpButton(4);
+            remoteControl.UpButton(4);
+            remoteControl.UpButton(4);
+            remoteControl.UpButton(4);
+            remoteControl.UpButton(4);
+            remoteControl.UpButton(4);
+            remoteControl.UpButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
+            remoteControl.DownButton(4);
 
             Console.Read();
 

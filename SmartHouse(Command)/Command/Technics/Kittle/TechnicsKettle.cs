@@ -7,15 +7,19 @@ namespace SmartHouse_Command_
 {
     public class TechnicsKettle : ITechnicsCommand
     {
-
+        KetteResiver Kette { get; set; }
+        public TechnicsKettle(KetteResiver ketteResiver)
+        {
+            Kette = ketteResiver;
+        }
         public void Execute()
         {
-            throw new NotImplementedException();
+            Kette.OnKettle();
         }
 
         public void Undo()
         {
-            throw new NotImplementedException();
+            Kette.OffKettle();
         }
     }
 }
