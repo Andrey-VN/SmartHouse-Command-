@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SmartHouse_Command_.Receiver.LightReceiver;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,13 +13,15 @@ namespace SmartHouse_Command_
         Medium = 2,
         Bright =3
     }
-    public class LightResiver
+    public class LightReceiverLov : ILightReceiver
     {
-        public LightDimming Level { get; set; }
-        public LightResiver()
+        public OffOnLight OffOnLight { get; set; }
+        public static LightDimming Level { get; set; }
+        public LightReceiverLov()
         {
             Level = LightDimming.Off;
         }
+
 
         public void SisplayLight()
         {
@@ -34,9 +37,8 @@ namespace SmartHouse_Command_
                     Console.WriteLine("Cвет средний");
                     break;
                 case LightDimming.Bright:
-                    Console.WriteLine("Cвет выключен");
+                    Console.WriteLine("Cвет яркий");
                     break;
-
             }
         }
         public void UpLight()

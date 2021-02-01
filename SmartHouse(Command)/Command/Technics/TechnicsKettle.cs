@@ -7,7 +7,6 @@ namespace SmartHouse_Command_
 {
     public class TechnicsKettle : ITechnicsCommand
     {
-        public TechnicsResiver TechnicsResiver { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public void Execute()
         {

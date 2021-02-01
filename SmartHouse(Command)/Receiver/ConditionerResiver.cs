@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace SmartHouse_Command_
+namespace SmartHouse_Command_.Receiver
 {
-    public class TechnicsResiver
+    class ConditionerResiver
     {
     }
 }

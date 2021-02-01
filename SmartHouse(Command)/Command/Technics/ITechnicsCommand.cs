@@ -7,6 +7,6 @@ namespace SmartHouse_Command_
 {
     public interface ITechnicsCommand : IComand
     {
-        TechnicsResiver TechnicsResiver { get; set; }
+       
     }
 }

@@ -7,7 +7,6 @@ namespace SmartHouse_Command_
 {
     public class ConditionerRoom_1 : ITechnicsConditioner
     {
-        public TechnicsResiver TechnicsResiver { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public void Execute()
         {
